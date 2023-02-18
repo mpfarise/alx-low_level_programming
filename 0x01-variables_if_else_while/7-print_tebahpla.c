@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - Entry point
+ * main - Entry - point
  *
  * Return: Always 0 (success)
  */
@@ -13,7 +12,7 @@ int main(void)
 	c = 'z';
 	while
 		(c >= 'a') {
-			putchar(0);
+			putchar(c);
 			c--;
 		}
 	putchar('\n');
