@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - Entry point
@@ -10,11 +8,17 @@
 
 int main(void)
 {
-	int d;
+	int a;
+	long int b;
+	long long int c;
+	char d;
+	float f;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	putchar('\n');
+	printf("size of a char: %lu byte(s)\n", (unsigned long )sizeof(d));
+	printf("size of a an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 
 	return (0);
 }
